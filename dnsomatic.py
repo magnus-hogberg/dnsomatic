@@ -24,7 +24,6 @@ while True:
         log.error(r.headers)
         log.error(r.text)
     else:
-        log.info(r.text)
         set_ip(r.text)
 
     time.sleep( lapse )
