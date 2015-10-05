@@ -6,11 +6,6 @@ logging.config.fileConfig('logging.conf')
 # create logger
 log = logging.getLogger('omatic')
 
-# logging.basicConfig(format='%(asctime)s|%(levelname)s|%(message)s')
-# log = logging.getLogger("dockerdnsomatic")
-# log.addFilter(logging.Filter(name="dockerdnsomatic"))
-# log.setLevel(logging.INFO)
-
 username=os.getenv("MATICUSERNAME")
 password=os.getenv("MATICPASSWORD")
 lapse=float(os.getenv("MATICLAPSE"))
